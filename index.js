@@ -901,7 +901,7 @@ client.on('group-participants-update', async (anu) => {
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Boo :𝘃')
 					if (Number(args[0]) === 1) {
-						if (isSimi) return reply('𝘄𝗲𝗹𝗰𝗼𝗺𝗲 𝗮𝘁𝗶𝘃𝗮𝗱𝗼; !!!')
+						if (isSimi) return reply('welcome ativado; !!!')
 						samih.push(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
 						reply('❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ 𝗠𝗲𝗻𝗴𝗮𝗸𝘁𝗶𝗳𝗸𝗮𝗻 𝗳𝗶𝘁𝘂𝗿 𝘀𝗶𝗺𝗶 𝗱𝗶 𝗴𝗿𝗼𝘂𝗽 𝗶𝗻𝗶️')
@@ -955,7 +955,7 @@ client.on('group-participants-update', async (anu) => {
 						if (isWelkom) return reply('*SUDAH AKTIF* !!!')
 						welkom.push(from)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('𝘄𝗲𝗹𝗰𝗼𝗺𝗲 𝗮𝘁𝗶𝘃𝗮𝗱𝗼)
+						reply('welcome ativado')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
